@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
 }
 
 body{
@@ -21,9 +21,9 @@ header {
 
 header h1 {
     font-weight: bold;
+    margin: 0;
     font-size: 36px;
     color: #fce138;
-    margin: 0;
 }
 
 header a {
@@ -50,12 +50,7 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
-header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #fce138;
-    margin: 0;
-    display: inline;  
+ 
 }
 footer {
     background: #fce138;
@@ -146,52 +141,72 @@ footer a {
     color: #fce138;
 }
 
-
-.intro {
-    text-align: center;
-}
-
-
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
   }
 
   .steps {
-      text-align: center;
-      background: #fce138;
+    background: #fce138;
   }
-  .steps div {
-      margin-bottom:  80px;
-  }
-  .steps img {
-      width: 15%;
-      margin: 10px 0;
-  }
-  .steps h3 {
-      color: #024e76;
-      font-size: 46px;
-      margin-top: 10px;
-  }
-  
-  .steps p {
-      color: #39a6b2;
-      font-size: 23px;
+  .step {
+      margin: 50px auto;
+      padding-bottom: 50px;
+      width: 80%;
+      border-bottom: 1px solid #39a6b2;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
   }
 
-  .steps span {
-    font-size: 38px;
+  
   }
+  
+  .step h3 {
+      color: #024e76;
+      font-size: 46px;
+      flex: 1 30%;
+  }
+  .step-info {
+      flex: 2 70%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+  .step-text {
+      flex: 12;
+  }
+  
+  .step-text p {
+      color: #39a6b2;
+      font-size: 18px;
+  }
+  .step-text h4 {
+      font-size: 26px;
+      line-height: 1.5;
+      color: #024e76;
+  }
+  .step-img {
+      flex: 1 12%;
+      margin-right:  20px;
+  }
+  .step-img {
+      max-width: 100%;
+  }
+
   .section-title {
     font-size: 55px;
-    display: inline-block;
-    padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
-    margin-bottom: 35px;
     color: #024e76; 
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 .primary-border {
     border-color: #fce138;
@@ -201,9 +216,6 @@ footer a {
     border-color: #39a6b2;
 }
 
-.trainers {
-      text-align: center;
-  }
 .trainer {
     width: 900px;
     margin: 0 auto 30px auto;
@@ -245,7 +257,6 @@ footer a {
 }
 /*Reach Out Styles Start */
 .contact {
-    text-align: center;
     background: #024e76;
 }
 .contact h2 {
@@ -278,3 +289,7 @@ footer a {
     color: #fce138;
 }
 /* REACH OUT STLYES END */
+
+.flex-row {
+    display: flex;
+}
